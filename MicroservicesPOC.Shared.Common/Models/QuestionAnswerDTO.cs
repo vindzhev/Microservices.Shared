@@ -1,4 +1,6 @@
-﻿namespace MicroservicesPOC.Shared.Common.Models
+﻿using MicroservicesPOC.Shared.Domain.Enums;
+
+namespace MicroservicesPOC.Shared.Common.Models
 {
     public abstract class QuestionAnswerDTO
     {
