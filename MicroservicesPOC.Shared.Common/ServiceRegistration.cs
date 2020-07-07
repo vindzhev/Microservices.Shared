@@ -1,4 +1,4 @@
-﻿namespace MicroservicesPOC.Shared
+﻿namespace MicroservicesPOC.Shared.Common
 {
     using System;
     using System.Linq;
