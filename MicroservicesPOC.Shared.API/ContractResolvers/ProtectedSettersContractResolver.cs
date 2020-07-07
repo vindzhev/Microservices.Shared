@@ -1,4 +1,4 @@
-﻿namespace MicroservicesPOC.Shared.Extensions
+﻿namespace MicroservicesPOC.Shared.API.ContractResolvers
 {
     using System.Reflection;
 

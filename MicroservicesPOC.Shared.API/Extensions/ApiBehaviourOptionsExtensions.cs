@@ -3,7 +3,7 @@
 //    using Microsoft.AspNetCore.Http;
 //    using Microsoft.AspNetCore.Mvc;
 //    using Microsoft.AspNetCore.Mvc.Filters;
-//    using Microsoft.AspNetCore.Mvc.Infrastructure;
+//    using Microsoft.AspNetCore.Mvc.Core.Infrastructure;
 
 //    using Microsoft.Extensions.DependencyInjection;
 
@@ -13,7 +13,7 @@
 //        {
 //            options.InvalidModelStateResponseFactory = (actionContext) =>
 //            {
-//                ProblemDetailsFactory problemFactory = actionContext.HttpContext.RequestServices.GetRequiredService<ProblemDetailsFactory>();
+//                ProblemDetailsFactory problemFactory = actionContext.HttpContext.RequestServices.GetRequiredService<DefaultProblem>();
 //                ProblemDetails problemDetails = problemFactory.CreateValidationProblemDetails(actionContext.HttpContext, actionContext.ModelState);
 
 //                problemDetails.Instance = actionContext.HttpContext.Request.Path;

@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesPOC.Shared", "MicroservicesPOC.Shared\MicroservicesPOC.Shared.csproj", "{186C27AD-3C16-4D8B-9718-02739643AF7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesPOC.Shared.API", "MicroservicesPOC.Shared.API\MicroservicesPOC.Shared.API.csproj", "{1842E55B-E101-483E-B1E2-338020AE49D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesPOC.Shared.Common", "MicroservicesPOC.Shared.Common\MicroservicesPOC.Shared.Common.csproj", "{82C485F8-64BC-49D7-97C3-E3F7ADD0B242}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesPOC.Shared.Domain", "MicroservicesPOC.Shared.Domain\MicroservicesPOC.Shared.Domain.csproj", "{456AF580-8FC9-48D9-AC4A-71D1C3A2A2A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesPOC.Shared.Messaging", "MicroservicesPOC.Shared.Messaging\MicroservicesPOC.Shared.Messaging.csproj", "{FFCD200F-26AA-4B3B-9456-642154FF9A7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{186C27AD-3C16-4D8B-9718-02739643AF7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{186C27AD-3C16-4D8B-9718-02739643AF7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{186C27AD-3C16-4D8B-9718-02739643AF7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{186C27AD-3C16-4D8B-9718-02739643AF7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1842E55B-E101-483E-B1E2-338020AE49D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1842E55B-E101-483E-B1E2-338020AE49D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1842E55B-E101-483E-B1E2-338020AE49D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1842E55B-E101-483E-B1E2-338020AE49D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C485F8-64BC-49D7-97C3-E3F7ADD0B242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C485F8-64BC-49D7-97C3-E3F7ADD0B242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C485F8-64BC-49D7-97C3-E3F7ADD0B242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C485F8-64BC-49D7-97C3-E3F7ADD0B242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456AF580-8FC9-48D9-AC4A-71D1C3A2A2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456AF580-8FC9-48D9-AC4A-71D1C3A2A2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456AF580-8FC9-48D9-AC4A-71D1C3A2A2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456AF580-8FC9-48D9-AC4A-71D1C3A2A2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFCD200F-26AA-4B3B-9456-642154FF9A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCD200F-26AA-4B3B-9456-642154FF9A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCD200F-26AA-4B3B-9456-642154FF9A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCD200F-26AA-4B3B-9456-642154FF9A7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

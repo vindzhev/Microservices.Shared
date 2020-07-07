@@ -1,8 +1,10 @@
-﻿namespace MicroservicesPOC.Shared.Common.Entities.Interfaces
+﻿namespace MicroservicesPOC.Shared.Domain
 {
     using System;
 
-    public interface IAuditableEntity
+    using MicroservicesPOC.Shared.Domain.Interfaces;
+
+    public class AuditableEntity : IAuditableEntity
     {
         public Guid CreatedBy { get; set; }
 

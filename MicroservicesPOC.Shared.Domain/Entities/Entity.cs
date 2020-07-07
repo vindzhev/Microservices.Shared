@@ -1,4 +1,4 @@
-﻿namespace MicroservicesPOC.Shared.Common.Entities
+﻿namespace MicroservicesPOC.Shared.Domain
 {
     public abstract class Entity<TKey>
     {

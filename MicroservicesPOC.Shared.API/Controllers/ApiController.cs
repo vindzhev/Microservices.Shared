@@ -1,9 +1,10 @@
-﻿namespace MicroservicesPOC.Shared.Controllers
+﻿namespace MicroservicesPOC.Shared.API.Controllers
 {
     using MediatR;
 
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.DependencyInjection;
+    
 
     [ApiController]
     public abstract class ApiController : ControllerBase
