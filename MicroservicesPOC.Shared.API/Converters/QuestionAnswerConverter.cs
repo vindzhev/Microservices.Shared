@@ -5,8 +5,9 @@
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
     
+    using MicroservicesPOC.Shared.Domain.Enums;
     using MicroservicesPOC.Shared.Common.Models;
-    
+
     public class QuestionAnswerConverter : JsonConverter
     {
         public override bool CanConvert(Type objectType) => objectType == typeof(QuestionAnswerDTO);
