@@ -33,6 +33,12 @@
                 return app;
 
             IServerAddressesFeature serverAddresses = features.Get<IServerAddressesFeature>();
+            if (serverAddresses.Addresses.Count == 0)
+            {
+                Microsoft.AspNetCore.Http.HttpContext httpContext = app.ApplicationServices.GetService<Microsoft.AspNetCore.Http.HttpContext>();
+                serverAddresses.Addresses.Add($"{httpContext.Request.Scheme}://{httpContext.Request.Host}{httpContext.Request.PathBase}");
+            }
+
             string address = serverAddresses.Addresses.First();
 
             Uri uri = new Uri(address);

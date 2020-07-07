@@ -1,4 +1,4 @@
-﻿namespace MicroservicesPOC.Shared.Common.Models
+﻿namespace MicroservicesPOC.Shared.Domain.Enums
 {
     public enum QuestionType
     {
