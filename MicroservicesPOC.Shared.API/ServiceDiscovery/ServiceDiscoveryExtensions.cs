@@ -6,20 +6,11 @@
     
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.DependencyInjection;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
 
     public static class ServiceDiscoveryExtensions
     {
-        private static ConsulClient CreateConsulClient(ServiceDiscoveryConfig serviceConfig)
-        {
-            ConsulClientConfiguration configuration = new ConsulClientConfiguration { Address = serviceConfig.ServiceDiscoveryServerURL };
-            HttpClient httpClient = new HttpClient() { BaseAddress = serviceConfig.ServiceDiscoveryServerURL };
-
-            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            return new ConsulClient(configuration, httpClient);
-        }
+        private static ConsulClient CreateConsulClient(ServiceDiscoveryConfig serviceConfig) =>
+            new ConsulClient(setup => setup.Address = serviceConfig.ServiceDiscoveryServerURL);
 
         public static void RegisterConsulServices(this IServiceCollection services, ServiceDiscoveryConfig serviceConfig)
         {
